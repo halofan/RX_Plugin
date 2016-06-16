@@ -1,0 +1,33 @@
+{
+  "author": "halofan (http://www.garsoniera.com.pl/forum/user/249810-halofan)",
+
+
+  "manifest_version": 2,
+  "name": "RX Plugin",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.roksa.pl/pl/anonse/panie/*",
+        "http://www.roksa.pl/pl/anonse/wszystkie/*",
+        "http://www.roksa.pl/pl/anonse/pokaz/*"
+      ],
+      "js": ["lib/jquery-2.2.0.min.js", "content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": ["main.css", "img/new.png", "img/fav.png", "img/ignore.png"],
+  "page_action": {
+    "default_icon": "img/rx.png",
+    "default_title": "RX Plugin",
+    "default_popup": "options/options.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "storage",
+    "declarativeContent"
+  ]
+}

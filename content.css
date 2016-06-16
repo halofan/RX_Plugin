@@ -1,0 +1,29 @@
+.fav_icon {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.ignore_icon {
+    position: absolute;
+    top: 19px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.new_icon {
+    position: absolute;
+    top: 36px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+}
+
+.inactive {
+    opacity: .3;
+}

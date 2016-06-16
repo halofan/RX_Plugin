@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="options.css" type="text/css">
+</head>
+<body>
+<div class="row">
+    <div class="r_label r_title">
+        RX Plugin
+    </div>
+    <div class="r_content r_desc">
+        stworzone przez <a class="author" href="http://www.garsoniera.com.pl/forum/user/249810-halofan/" target="_blank">halofan</a>
+    </div>
+</div>
+<div class="row">
+    <div class="r_label">
+        Jak długo anons jest oznaczony jako nowy (liczba wizyt na stronie)?
+    </div>
+    <div class="r_content">
+        <input id="new_limiter" type="number">
+    </div>
+</div>
+<div class="row">
+    <label class="r_label">
+        Szukaj po...
+    </label>
+    <div class="r_content">
+        <div>
+            <label for="searchByPhone">
+                ...numerze telefonu
+            </label>
+            <input id="searchByPhone" type="checkbox" name="byPhone" disabled checked/>
+        </div>
+
+        <div>
+            <label for="searchById">
+                ...id anansu
+            </label>
+            <input id="searchById" type="checkbox" name="byId"/>
+        </div>
+    </div>
+</div>
+
+<div class="row" id="advencedOptButton">
+    <div class="r_label">Zaawansowane</div>
+</div>
+<div class="row" id="advencedOpt">
+    <div class="r_label">
+        Wyczyść z pamięci dane anonsu o id:
+    </div>
+    <div class="r_content">
+        <input id="anonsId" type="number">
+        <button id="clearAnons">Wyczyść</button>
+    </div>
+</div>
+
+<script src="../lib/jquery-2.2.0.min.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

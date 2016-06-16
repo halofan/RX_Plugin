@@ -1,0 +1,39 @@
+body {
+    background-color: #fff8ff;
+}
+
+a.author {
+    color: #36fa63;
+}
+
+.row {
+    margin-top: 7px;
+}
+
+.row .r_label {
+    font-weight: bold;
+    background-color: #b298e3;
+    color: #FFFFFF;
+    padding: 2px;
+}
+
+.row .r_title {
+    background-color: #301857;
+}
+
+.row .r_content {
+}
+
+#advencedOptButton {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#clearAnons {
+    float: right;
+    margin-top: 2px;
+}
+
+.r_desc {
+    font-size: 9px;
+}
