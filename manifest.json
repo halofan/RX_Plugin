@@ -4,7 +4,10 @@
 
   "manifest_version": 2,
   "name": "RX Plugin",
-  "version": "1.0",
+  "short_name": "RXP",
+  "version": "1.0.2",
+
+  "description": "Rozszerza funkcje strony Roksy",
 
   "content_scripts": [
     {
@@ -24,7 +27,8 @@
     "default_popup": "options/options.html"
   },
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background.js"],
+    "persistent": false
   },
   "permissions": [
     "storage",
